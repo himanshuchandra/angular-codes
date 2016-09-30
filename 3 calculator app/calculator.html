@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator App</title>
+    <script src="angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/factory/calfactory.js"></script>
+    <script src="js/controllers/calctrl.js"></script>
+</head>
+<body ng-app="calapp" ng-controller="calctrl">
+    <input type="text" ng-model="firstnumber" placeholder="Enter first number">
+    <br>
+    <input type="text" ng-model="secondnumber" placeholder="Enter second number">
+    <br>
+    <button ng-click="add()">+</button>
+    <button ng-click="sub()">-</button>
+    <button ng-click="mul()">*</button>
+    <button ng-click="div()">/</button>
+    
+    <br>
+    <h1>{{result}}</h1>
+</body>
+</html>

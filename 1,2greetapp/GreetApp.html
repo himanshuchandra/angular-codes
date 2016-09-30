@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greet App</title>
+    <script src="angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/factory/greetfactory.js"></script>
+    <script src="js/controllers/greetctrl.js"></script>
+</head>
+<body ng-app="greetapp" ng-controller="greetctrl">
+    <input type="text" ng-model="firstname" placeholder="Type First Name Here">
+    <br>
+    <input type="text" ng-model="lastname" placeholder="Type Second Name Here">
+    <br>
+    <button ng-click="sayWelcome()">Greet</button>
+    <br>
+    <h1>{{fullname}}</h1>
+</body>
+</html>

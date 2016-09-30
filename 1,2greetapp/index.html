@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function sayHello(){
+           var value =  document.getElementById("txtName").value;
+            document.getElementById("msg").innerHTML="Hello "+value;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onkeyup="sayHello()" placeholder="Type Your Name Here" name="" id="txtName">
+
+<h1  id="msg">Welcome</h1>
+</body>
+</html>
